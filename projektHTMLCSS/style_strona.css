@@ -1,0 +1,248 @@
+/* strona */
+/* Ogólne style dla całej strony */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dodanie własnej czcionki */
+@font-face {
+    font-family: "mojaczcionka";
+    src: url("czcionka/raleway.ttf");
+}
+
+/* Styl dla głównego kontenera */
+#glowny {
+    width: 100%;
+    height: 100vh;
+    background-image: url("grafika/moto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styl dla tytułu */
+#tytul {
+    color: black;
+    font-size: 150%;
+}
+
+/* Styl dla środkowego kontenera z zawartością */
+#center {
+    box-sizing: border-box;
+    padding: 1% 5%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Styl dla nagłówka */
+#naglowek {
+    display: flex;
+    height: 10%;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 0 5%;
+}
+
+/* Styl dla animowanej grafiki Hondy */
+#honda {
+    height: 60%;
+    width: auto;
+    max-width: 15%;
+    animation: animacja1 4s linear infinite;
+}
+
+/* Animacja obracania grafiki Hondy */
+@keyframes animacja1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/* Styl dla kontenera z animowanym zdjęciem */
+#zdjecie {
+    position: relative;
+    animation: animacja2 2s linear infinite;
+}
+
+/* Animacja przesuwania animowanego zdjęcia */
+@keyframes animacja2 {
+    0%   {
+        left: 0px;
+    }
+    50%  {
+        left: 10%;
+    }
+    100%  {
+        left: 0px;
+    }
+}
+
+/* Styl dla animowanego pierścienia */
+#pierscien {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border: 3px dashed blue;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: animacja3 1.5s linear infinite;
+}
+
+/* Animacja obracania animowanego pierścienia */
+@keyframes animacja3 {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% {
+        transform: rotate(360deg);
+     }
+}
+
+/* Styl dla poziomej linii zielonej */
+hr#jeden {
+    color:green;
+    width: 20%;
+    margin-right: 88%;
+}
+
+/* Styl dla menu nawigacyjnego */
+#menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+/* Styl dla poszczególnych elementów menu */
+#menu li {
+    margin-right: 20px;
+    padding: 8px;
+}
+
+/* Styl dla podmenu (widocznego po najechaniu) */
+#menu .podmenu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: black;
+}
+
+/* Wyświetlanie podmenu po najechaniu myszką */
+#menu li:hover .podmenu {
+    display: block;
+}
+
+/* Styl dla odnośników */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styl dla sekcji z grafiką Hondy (zmiana tła po najechaniu) */
+#zhonda, #thonda {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styl dla pierwszej sekcji z grafiką Hondy */
+#zhonda {
+    height: 50vh;
+    background-image: url("grafika/nc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styl dla drugiej sekcji z tekstem pod grafiką Hondy */
+#thonda {
+    padding: 20px;
+}
+
+/* Efekt zmiany tła i obracania grafiki Hondy po najechaniu */
+#zhonda:hover {
+    background-image: url("grafika/motocykl.jpg");
+    transform: rotate(8deg);
+    transition-duration: 150ms;
+}
+
+/* Styl dla formularza */
+#formularz {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-color: white;
+    color: black;
+    padding: 2% 5%;
+}
+
+/* Styl dla ikony w formularzu */
+#formularz img {
+    height: 50px;
+}
+
+/* Styl dla sekcji zbiórkowej w formularzu */
+#zbior {
+    margin-right: 3%;
+    width: 33.33%;
+}
+
+/* Styl dla tekstu w sekcji formularza */
+#tekst2 {
+    font-size: 14px;
+}
+
+/* Styl dla sekcji dolnej strony */
+#dol {
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    color: white;
+    padding: 2%;
+}
+
+/* Media queries dla ekranów o szerokości do 768px */
+@media only screen and (max-width: 768px) {
+    #naglowek {
+        font-size: 16px;
+    }
+
+    #honda {
+        max-width: 10%;
+    }
+
+    #menu {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    #center {
+        padding: 1% 2%;
+    }
+
+    #zhonda {
+        height: 30vh;
+    }
+
+    #formularz {
+        padding: 10% 2%;
+    }
+
+    #tekst2, #tekst1 {
+        font-size: 12px;
+    }
+
+    #tytul {
+        font-size: 15px;
+    }
+}

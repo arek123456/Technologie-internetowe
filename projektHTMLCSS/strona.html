@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona o motocyklach</title>
+    <link rel="stylesheet" href="style_strona.css">
+</head>
+<body>
+    <!-- Nagłówek strony -->
+    <div id="naglowek">
+       <!-- Logo marki Honda -->
+       <img id="honda" src="grafika/honda.jpg">
+       <!-- Menu nawigacyjne -->
+       <ul id="menu">
+           <li id="a1"><a href="#oferta">OFERTA</a></li>
+           <li id="a2"><a href="#kontakt">KONTAKT</a></li>
+           <li id="a3">GALERIA
+            <ul class="podmenu">
+                <!-- Link do strony z galerią -->
+                <li><a href="galeria.html">POKAŻ</a></li>
+            </ul>
+            </li>
+       </ul>
+    </div>
+        <!-- Główna sekcja strony -->
+        <div id="glowny"><br><br>
+            <!-- Centralna część strony -->
+            <div id="center"> 
+            <!-- Zdjęcie motocykla Honda -->
+            <div id="zhonda">
+            <!-- Sekcja z informacjami o modelu motocykla -->
+            </div>
+            <a name="oferta"></a>
+            <div id="thonda">
+              <div id="tytul">Honda nc 700</div>
+              <hr id="jeden">
+                <!-- Tekst opisujący model motocykla -->
+                <div id="tekst1">
+                    Koncepcję nowej, wprowadzającej wiele świeżości Hondy opracowano pod kątem przyjemności z jazdy i przystępnej ceny.
+                    Atrakcyjną stylistykę spod znaku naked bike świetnie zestawiono z funkcjonalnością w każdym obszarze. Przy opracowywaniu
+                    tego nieobudowanego motocykla szczególny nacisk położono na łatwość prowadzenia, frajdę z podróżowania i prostotę obsługi.
+                    Umiarkowane oddalenie siedziska od nawierzchni i nisko położony środek ciężkości pomagają w utrzymaniu równowagi i pozwalają
+                    czuć się bezpiecznie zarówno początkującym jak i doświadczonym kierowcom. Sercem Hondy jest zupełnie nowy silnik, wyróżnia 
+                    się przyjemną charakterystyką, dużym momentem obrotowym w zakresie niskich i średnich obrotów oraz bardzo niskim zużyciem 
+                    paliwa.
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- Formularz oraz sekcje z danymi technicznymi i opinią -->
+        <div id="formularz">
+            <!-- Sekcja z danymi technicznymi motocykla -->
+            <div id="zbior">
+            <img id="zdjecie" src="grafika/dane.png"><div id="dane">Dane techniczne motocykla Honda nc 700</div>
+            <hr id="dwa">
+            <!-- Lista z danymi technicznymi -->
+            <div id="tekst2">
+                <ul>
+                    <li>Pojemność silnika: 670 cm<sup>3</sup></li>
+                    <li>Moc maksymalna: 38,1 kW (48 km)</li>
+                    <li>Maksymalny moment obrotowy: 62 Nm</li>
+                    <li>Średnica cylindra x skok tłoka:	73 x 80 mm</li>
+                    <li>Zasilanie: układ wtryskowy PGM-FI</li>
+                    <li>Rozruch: elektryczny</li>
+                    <li>System chłodzenia: chłodzony cieczą</li>
+                    <li>Skrzynia biegów: 6 biegowa</li>
+                    <li>Waga na sucho: 214 kg, 218 kg z ABS</li>
+                    <li>Zużycie paliwa na 100 km: 3.5 litra/100 km</li>
+                    <li>Pojemność zbiornika paliwa: 14.1 litra</li>
+                </ul>
+            </div>
+            </div>
+            <!-- Sekcja z opinią na temat motocykla -->
+            <div id="zbior">
+            <img id="zdjecie" src="grafika/info.png"><div id="ankieta">Opinia</div>
+            <hr id="dwa">
+            <!-- Tekst z opinią -->
+            <div id="tekst2">
+                Od momentu kiedy Honda opuściła naszą redakcję, minęło już sporo czasu. Mimo to pisząc podsumowanie, nie opuszcza nas 
+                uczucie zażenowania. Jeszcze nigdy tak bardzo nie pomyliliśmy się we wstępnej ocenie motocykla. Wcześniej nie wspomnieliśmy 
+                o jednej z głównych cech. Jeśli jeszcze tego nie zauważyliście, zwróćcie uwagę na schowek mieszczący się w miejscu, gdzie 
+                zazwyczaj spotykamy zbiornik paliwa. Na postoju możemy tam wpakować kask każdego rodzaju. Jadąc do pracy, zmieścimy tam laptopa, 
+                buty na zmianę i spory zapas kanapek. Po kilku dniach przestaniecie sobie wyobrażać możliwości funkcjonowania bez takiego 
+                schowka. Drugą bardzo ważną cechą, o której nie wspomnieliśmy wcześniej, jest opcjonalna automatyczna skrzynia biegów. 
+                Dwusprzęgłowy system o nazwie DCT działa genialnie. Zmiana biegów odbywa się tak szybko, że jest niemal niezauważalna. 
+                Jeśli chcemy się pobawić, możemy w dowolnym momencie przejść do trybu manualnego. Mamy już dość słodzenia Hondzie, dlatego 
+                wspomnimy o ostatnim plusie – cenie… Ciężko uwierzyć, że tak dobry motocykl możemy kupić już za 25 000 PLN.
+            </div>
+            </div>
+            <!-- Sekcja z formularzem ankiety -->
+            <div id="zbior">
+                <img id="zdjecie" src="grafika/ankieta.png"><div id="ankieta">Ankieta</div>
+                <hr id="dwa">
+                <!-- Formularz ankiety -->
+                <div id="tekst2">
+                    <form method="get" action="">
+                        <fieldset>
+                        <legend>Wybierz ulubioną markę motocykla:</legend>
+                        <input type="radio" id="honda" name="marka" value="honda" checked>
+                        <label for="honda">Honda</label>
+                        <input type="radio" id="kawasaki" name="marka" value="kawasaki">
+                        <label for="kawasaki">Kawasaki</label>
+                        <input type="radio" id="suzuki" name="marka" value="suzuki">
+                        <label for="suzuki">Suzuki</label>
+                        <input type="radio" id="yamaha" name="marka" value="yamaha">
+                        <label for="yamaha">Yamaha</label>
+                        <input type="radio" id="ktm" name="marka" value="ktm">
+                        <label for="ktm">KTM</label>
+                        <input type="radio" id="ducati" name="marka" value="ducati">
+                        <label for="ducati">Ducati</label>
+                        <input type="radio" id="aprilla" name="marka" value="aprilla">
+                        <label for="aprilla">Aprilla</label>
+                        <input type="radio" id="harley" name="marka" value="harley">
+                        <label for="harley">Harley-Davidson</label>
+                        <input type="radio" id="inna" name="marka" value="inna">
+                        <label for="inna">Inna</label>
+                        </fieldset>
+                        <label for="model">Podaj ulubiony model motocykla:</label>
+                        <input type="text" id="model" name="model"><br>
+                        <label for="posiadanie">Podaj motocykl, który posiadałeś:</label>
+                        <input type="text" id="posiadanie" name="posiadanie"><br>
+                        <label for="marzenie">Podaj motocykl, o którym marzysz:</label>
+                        <input type="text" id="marzenie" name="marzenie"><br>
+                        <label for="pojemnosc">Podaj największą pojemność skokową, jaką jeździłeś:</label>
+                        <input type="number" id="pojemnosc" name="pojemnosc" min="1"> cm<sup>3</sup><br>
+                        <label for="kolor">Jaki kolor najbardziej ci się podoba:</label>
+                        <input type="color" id="kolor" name="kolor"><br>
+                        <label for="rodzaj">Wybierz ulubiony rodzaj:</label>
+                        <select id="rodzaj">
+                        <option value="naked">Naked</option>
+                        <option value="chooper">Chopper</option>
+                        <option value="cruiser">Cruiser</option>
+                        <option value="turystyk">Turystyk</option>
+                        <option value="skuter">Skuter</option>
+                        <option value="scigacz">Ścigacz</option>
+                        <option value="sport">Sport</option>
+                        </select><br>
+                        <label for="typ">Jaki typ silnika uwielbiasz:</label>
+                        <select id="typ">
+                        <option value="singiel">Singiel</option>
+                        <option value="v-twin">V-Twin</option>
+                        <option value="r2">R2</option>
+                        <option value="boxer">Boxer</option>
+                        <option value="r3">R3</option>
+                        <option value="r4">R4</option>
+                        <option value="r6">R6</option>
+                        <option value="v4">V4</option>
+                        </select><br>
+                        <input type="submit" value="Wyślij">
+                        <input type="reset" value="Resetuj">
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Stopka strony -->
+        <div id="dol">
+             <!-- Kontakt telefoniczny -->
+            <div id="tekst3"><a name="kontakt">Dzwoń: +48 248 525 636</a></div>&nbsp
+             <!-- Element graficzny w stopce (slider) -->
+            <div id="pierscien"></div>
+        </div>
+</body>
+</html>

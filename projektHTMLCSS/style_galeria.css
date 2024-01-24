@@ -1,0 +1,74 @@
+/* galeria */
+/* Ogólne style dla całej strony */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dodanie własnej czcionki */
+@font-face {
+    font-family: "mojaczcionka";
+    src: url("czcionka/raleway.ttf");
+}
+
+/* Style dla całego body */
+body{
+    background-color: lightblue;
+}
+
+/* Nagłówek strony */
+h2{
+    text-align: center;
+    color: green;
+}
+
+/* Styl dla sekcji galerii motocykli */
+div.galeria {
+    border: 1px solid #ccc;
+}
+  
+/* Zmiana stylu podczas najechania myszką na element galerii */
+div.galeria:hover {
+    border: 1px solid #777;
+}
+  
+/* Styl obrazków w galerii */
+div.galeria img {
+    width: 100%;
+    height: auto;
+}
+  
+/* Styl dla opisu motocykli */
+div.opis {
+    padding: 15px;
+    text-align: center;
+}
+ 
+/* Ustawienie pudełkowego modelu box-sizing dla wszystkich elementów */
+* {
+    box-sizing: border-box;
+}
+  
+/* Układ motocykli w galerii */
+.moto {
+    float: left;
+    padding: 0 0.4%;
+    width: 24.6%;
+}
+  
+/* Responsywność: Dla ekranów o szerokości do 700px zmniejsz szerokość motocykli */
+@media only screen and (max-width: 700px) {
+    .moto {
+      width: 50%;
+      margin: 0.4% 0;
+    }
+}
+ 
+/* Responsywność: Dla ekranów o szerokości do 500px zmniejsz szerokość motocykli */
+@media only screen and (max-width: 500px) {
+    .moto {
+      width: 100%;
+    }
+}
