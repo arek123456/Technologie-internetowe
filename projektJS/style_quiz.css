@@ -1,0 +1,115 @@
+/* quiz */
+/* Ogólne style dla całej strony */
+body {
+    font-family: 'Arial';
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styl dla kontenera quizu */
+#quiz-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80vh;
+    text-align: center;
+}
+
+/* Styl dla nagłówka quizu */
+h1 {
+    color: black;
+}
+
+/* Styl dla pytania w quizie */
+h2 {
+    color: grey;
+}
+
+/* Styl dla kontenera z opcjami odpowiedzi */
+#options-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Styl dla poszczególnych opcji odpowiedzi */
+.option {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Styl dla poprawnej opcji odpowiedzi */
+.option.correct {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+/* Efekt hover dla opcji odpowiedzi */
+.option:hover {
+    background-color: darkgreen;
+}
+
+/* Styl dla przycisku "Next" */
+#next-btn {
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efekt hover dla przycisku "Next" */
+#next-btn:hover {
+    background-color: darkblue;
+}
+
+/* Styl dla kontenera wyników pytania */
+#result-container {
+    margin-top: 20px;
+}
+
+/* Styl dla poprawnej odpowiedzi */
+.correct {
+    color: green;
+}
+
+/* Styl dla niepoprawnej odpowiedzi */
+.incorrect {
+    color: red;
+}
+
+/* Styl dla końcowej wiadomości po zakończeniu quizu */
+#final-message {
+    margin-top: 20px;
+    color: blue;
+    font-weight: bold;
+}
+
+/* Styl dla przycisku "Zamknij" */
+#close-btn {
+    display: none;
+    background-color: yellow;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Efekt hover dla przycisku "Zamknij" */
+#close-btn:hover {
+    background-color: black;
+}
