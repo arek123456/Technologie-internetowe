@@ -1,4 +1,35 @@
-/* galeria */
+/*
+# Galeria
+
+Ogólne style dla całej strony:
+  - `html, body`: Ustawienia dla całego dokumentu.
+  - `@font-face`: Dodanie niestandardowej czcionki.
+
+Style dla całego body:
+  - `body`: Tło strony.
+
+Nagłówek strony:
+  - `h2`: Nagłówek strony.
+
+Sekcja galerii motocykli:
+  - `div.galeria`: Kontener galerii.
+  - `div.galeria:hover`: Zmiana stylu podczas najechania myszką.
+  - `div.galeria img`: Styl obrazków w galerii.
+
+Opis motocykli:
+  - `div.opis`: Styl dla opisu motocykli.
+
+Pudełkowy model box-sizing:
+  - `*`: Ustawienia dla wszystkich elementów.
+
+Układ motocykli w galerii:
+  - `.moto`: Styl motocykli.
+  - `@media only screen and (max-width: 700px)`: Responsywność dla szerokości do 700px.
+  - `@media only screen and (max-width: 500px)`: Responsywność dla szerokości do 500px.
+
+Styleguide 2.1.2
+*/
+
 /* Ogólne style dla całej strony */
 html, body {
     height: 100%;

@@ -1,4 +1,76 @@
-/* strona */
+/*
+# Strona
+
+Ogólne style dla całej strony:
+  - `html, body`: Ustawienia dla całego dokumentu.
+  - `@font-face`: Dodanie niestandardowej czcionki.
+
+Styl dla głównego kontenera:
+  - `#glowny`: Główny kontener z tłem.
+
+Styl dla tytułu:
+  - `#tytul`: Styl dla tytułu.
+
+Styl dla środkowego kontenera z zawartością:
+  - `#center`: Środkowy kontener z zawartością.
+
+Styl dla nagłówka:
+  - `#naglowek`: Nagłówek z menu i innymi elementami.
+
+Styl dla animowanej grafiki Hondy:
+  - `#honda`: Animowana grafika Hondy.
+
+Styl dla kontenera z animowanym zdjęciem:
+  - `#zdjecie`: Kontener z animowanym zdjęciem.
+
+Styl dla animowanego pierścienia:
+  - `#pierscien`: Animowany pierścień.
+
+Styl dla poziomej linii zielonej:
+  - `hr#jeden`: Pozioma linia zielona.
+
+Styl dla menu nawigacyjnego:
+  - `#menu`: Menu nawigacyjne.
+
+Styl dla poszczególnych elementów menu:
+  - `#menu li`: Poszczególne elementy menu.
+
+Styl dla podmenu (widocznego po najechaniu):
+  - `#menu .podmenu`: Podmenu.
+
+Styl dla odnośników:
+  - `a`: Odnośniki.
+
+Styl dla sekcji z grafiką Hondy (zmiana tła po najechaniu):
+  - `#zhonda, #thonda`: Sekcje z grafiką Hondy.
+
+Styl dla pierwszej sekcji z grafiką Hondy:
+  - `#zhonda`: Pierwsza sekcja z grafiką Hondy.
+
+Styl dla drugiej sekcji z tekstem pod grafiką Hondy:
+  - `#thonda`: Druga sekcja z tekstem pod grafiką Hondy.
+
+Styl dla formularza:
+  - `#formularz`: Formularz.
+
+Styl dla ikony w formularzu:
+  - `#formularz img`: Ikona w formularzu.
+
+Styl dla sekcji zbiórkowej w formularzu:
+  - `#zbior`: Sekcja zbiórkowa w formularzu.
+
+Styl dla tekstu w sekcji formularza:
+  - `#tekst2`: Tekst w sekcji formularza.
+
+Styl dla sekcji dolnej strony:
+  - `#dol`: Dolna sekcja strony.
+
+Media queries dla ekranów o szerokości do 768px:
+  - Drobne dostosowania dla mniejszych ekranów.
+
+Styleguide 2.1.1
+*/
+
 /* Ogólne style dla całej strony */
 html, body {
     height: 100%;
