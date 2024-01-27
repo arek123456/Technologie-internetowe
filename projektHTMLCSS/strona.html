@@ -119,13 +119,13 @@
                         <label for="inna">Inna</label>
                         </fieldset>
                         <label for="model">Podaj ulubiony model motocykla:</label>
-                        <input type="text" id="model" name="model"><br>
+                        <input type="text" id="model" name="model" pattern="[A-Za-z0-9\s]+" required><br>
                         <label for="posiadanie">Podaj motocykl, który posiadałeś:</label>
-                        <input type="text" id="posiadanie" name="posiadanie"><br>
+                        <input type="text" id="posiadanie" name="posiadanie" pattern="[A-Za-z0-9\s]+" required><br>
                         <label for="marzenie">Podaj motocykl, o którym marzysz:</label>
-                        <input type="text" id="marzenie" name="marzenie"><br>
+                        <input type="text" id="marzenie" name="marzenie" pattern="[A-Za-z0-9\s]+" required><br>
                         <label for="pojemnosc">Podaj największą pojemność skokową, jaką jeździłeś:</label>
-                        <input type="number" id="pojemnosc" name="pojemnosc" min="1"> cm<sup>3</sup><br>
+                        <input type="number" id="pojemnosc" name="pojemnosc" min="1" pattern="[0-9]+" required> cm<sup>3</sup><br>
                         <label for="kolor">Jaki kolor najbardziej ci się podoba:</label>
                         <input type="color" id="kolor" name="kolor"><br>
                         <label for="rodzaj">Wybierz ulubiony rodzaj:</label>
